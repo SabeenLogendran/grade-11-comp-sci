@@ -1,0 +1,248 @@
+# Start of the Adventure
+print("Welcome to Sabeen's Family Friendly Camping Adventure!\n\nYou go on a camping trip alone to separate yourself from society.\nAs you walk along the dirt pathway, you're stopped by a young tall boy named Arujan.\nHe kindly asks to join you on your short adventure.")
+print("Do you let him join you? (yes/no)")
+user_input = input("> ").strip().lower()
+
+# Scene 1 -> Scene 2
+if user_input == "yes":
+    print("Arujan lets out a huge smile as he's very grateful that you let him join you along his short adventure.\nAs you continue to walk by the dirt pathway, you suddenly stop to see a two-way pathway,\none going left and the other going right.")
+    print("Which way do you go? (left/right)")
+    user_input = input("> ").strip().lower()
+
+
+    # Scene 2 -> Scene 4
+    if user_input == "left":
+        print("You continue to walk upon the dirt pathway,\nas you continue to walk your body instantly comes to a stop as you feel your heart drop.\nIn the distance, you see a corpse laying down on the ground with no sense of life at all.")
+        print("What do you do? (investigate/call help)")
+        user_input = input("> ").strip().lower()
+    
+        # Scene 4 -> Scene 8
+        if user_input == "investigate":
+            print("You slowly walk closer to the corpse as Arujan follows behind you.\nYou cover your nose as the smell of death makes you want to vomit.\nYou go close to check out the body and see a young girl drenched in dark red blood from head to toe...\nYou see multiple stab wounds,\nand her head was far away from her body as she's been cut limb by limb.\nArujan thinks of hiding the body and acts as if nothing happened.")
+            print("What do you do? (hide body/call help again)")
+            user_input = input("> ").strip().lower()
+            
+            # Scene 8 -> Scene 16
+            if user_input == "hide body":
+                print("You help Arujan with the little girl's limbs as you put them aside from the ground,\nArujan says that burying the body won't be enough as the police search dogs can easily sniff out the body.\nArujan suggests either using a dead animal as a diversion or placing an endangered plant over the buried body as endangered species cannot be destroyed.")
+                print("What will you do? (animal/plant)")
+                user_input = input("> ").strip().lower() 
+                
+                # Scene 16 -> Ending 13
+                if user_input == "animal":
+                    print("You go in search for a small animal,\nhowever you see a dog wandering around without its owner,\nyou call out to Arujan who stabs the dog without hesitating,\nhe quickly closes its mouth ensuring it doesn't make any noise as it barks in pain.\nAfter you and Arujan spend the whole night digging 8 feet into the ground to bury the body and then placing the dog a few feet up to create a diversion.")
+                # Scene 16 -> Ending 12
+                elif user_input == "plant":
+                    print("Arujan brings out an endangered plant from his car,\nhe buries the body and places the plant over the body.\nThis results in the police not being able to dig up the body.")
+                # Else statement if player fails to anwser with possible choices
+                else:
+                    print("Invalid Anwser,\nYou dig a hole 2 feet deep and bury the body")
+           # Scene 8 -> Ending 1
+            elif user_input == "call help again":
+                print("Arujan's facial expression slowly gets angry as he pulls out a knife from his back pocket.\nWithout a second you decide to run as fast as you can as Arujan tails behind you.\nYou trip on a stick and Arujan corners you...\nfrom there Arujan swings his knife leaving major cuts around your body as you lie there helplessly,\nhe finally ends it all with one cut towards your throat...\nthere you lay dead.")
+           
+           # Scene 4 -> Scene 9
+        elif user_input == "call help":
+            print("You start screaming out for someone to come,\nrealizing it was no help you decide to take your phone out and call 911 for help.\nYou look at Arujan for help,\nhowever his expression on his face is very angry and pissed as if he didn't want you calling for help.\nWithin a split second, he pulls something from his back pocket before you were given enough time to plan your next move.")
+            print("What will you do? (fight/run)")
+        
+        # Else statement if player fails to anwser with possible choices
+        else:
+            print("Invalid Anwser,\nYou get too scared that your body freezes on the stop,\nunable to move a limb you can't make an escape.\nArujan slowly walks towards you as he point the knife at your heart as he slowly carves out your heart as you lay there dead.")
+            user_input = input("> ").strip().lower()
+            
+            # Scene 9 -> Scene 17
+            if user_input == "fight":
+                print("You quickly look around your surroundings trying to find anything to defend yourself with,\nyou see a forest in the distance and run towards it in hope of finding a large stick,\nyou find a large branch and use it to defend yourself,\nas Arujan quickly comes towards you wielding the knife as he attempts to stab you,\nyou quickly bash the stick straight to his head, knocking him unconscious.\nYou now have the option to either flee or commit murder and kill him.")
+                print("What will you do? (flee/murder)")
+                user_input = input("> ").strip().lower()
+                
+                # Scene 17 -> Ending 11
+                if user_input == "flee":
+                    print("You take the knife out of Arujan's hands and run off immediately,\nwithout looking back you run for several hours until you reach a nearby gas station.\nYou call for help and as the police check the scene, Arujan goes missing again.")
+                
+                # Scene 17 -> Ending 10
+                elif user_input == "murder":
+                    print("You quickly grab the knife out of Arujan's hands as you're ready to end it all.\nYou stab him in the chest and blood gushes everywhere,\nyou keep stabbing him even though he's dead you continue to stab him until your bright white shirt is all red.")
+                
+                # Else statement if player fails to anwser with possible choices
+                else:
+                    print("Invalid Anwser,\nYou run off without looking back,\nafter several of minutes of running you get tired yet continue to run until you find yourself near a gas station where you call for help.")
+            
+            # Scene 9 -> Ending 2    
+            elif user_input == "run":
+                print("You sprint in the opposite direction as fast as you can,\ntrying to avoid trees and not trip over the roots.\nArujan chases after you,\nbut you're faster and manage to create some distance.\nEventually, you come across a nearby road where you call down a car.\nYou tell the driver everything and without time being wasted the driver calls the police and you're safe.\nArujan goes missing in the forest,\nas he continues to lurk around finding his next victim.")
+            
+            # Else statement if player fails to anwser with possible choices
+            else:
+                print("Invalid Anwser,\nYou run away as fast as you can however the trees get in your way slowing down your speed,\nArujan manages to catch up.\nYour heart sinks as you trip over the roots of a big tall tree.\nYour cornered as you aren't ready to accept your fate.\nYou lay there screaming pleading for mercy as Arujan slowly approaches you and gauges out your eyes and cuts your tounge off.\nThe silent deadly screams continue as you lay there blind walking to find yourself help.\nYou manage to get yourself on the road where you get hit by a driving truck")
+    
+    # Scene 1 -> Scene 3
+    elif user_input == "right":
+        print("You continue walking upon the dirt pathway,\nas you continue walking you see a river in the distance.")
+        print("Do you wish to follow where the river leads to? (yes/no)")
+    
+    # Else statement if player fails to anwser with possible choices
+    else:
+        print("Invalid Anwser,\nYou decide to trust your gut and proceed to go right")
+        user_input = input("> ").strip().lower()
+        
+        # Scene 3 -> Scene 6
+        if user_input == "yes":
+            print("You continue to walk along the river,\nafter several minutes of following the river you arrive at a large beautiful lake with clear ocean blue water,\na thought occurs in your mind as you think about swimming in the water.")
+            print("Do you wish to swim in the water? (yes/no)")
+            user_input = input("> ").strip().lower()
+            
+            # Scene 10 -> Scene 18
+            if user_input == "yes":
+                print("With no hesitation you jump into the lake as the slight cold water cools down your body,\nyou start swimming around enjoying the unforgettable moment,\nhowever you realize Arujan has gone missing ever since.")
+                print("Do you want to look for him? (look for him/ignore)")
+                user_input = input("> ").strip().lower()
+
+                # Scene 18 -> Ending 9
+                if user_input == "look for him":
+                    print("You get outside of your tent, as you go onto the dirt pathway you yell out Arujan's name. You hear him call you out in a forest nearby. You decide to run towards the forest. Arujan hits the back of your head with a hard branch. You black out; you soon wake up several minutes later as you realize it's too late, as you panic and you try to find a way out inside of a coffin as you get buried alive.")
+                
+                # Scene 18 -> Ending 8
+                elif user_input == "ignore":
+                    print("You get out of the pond and put on a set of changed clothes.\nYou get inside your tent as you're too tired to move a limb.\nAs you ignore Arujan going missing you go to sleep,\nthinking that Arujan will come later.\nIt's morning and you wake up and Arujan already packed his stuff,\nhe says his goodbyes as he has somewhere else to go.")
+                
+                # Else statement if player fails to anwser with possible choices
+                else:
+                    print("Invalid Anwser,\nYou don't feel like swimming and decide to set up your tent.\nYou call it a day and go to sleep")
+            # Scene 10 -> Scene 19
+            elif user_input == "no":
+                print("You decide to set up your tent,\nits been a long day,\nalthough you realize Arujan has gone missing but your too tired to do anything so you decide to go to sleep.")
+                print("But you see something floating in the lake catch your attention. What will you do? (check/sleep)")
+                user_input = input(" >").strip().lower()
+
+                # Scene 19 -> Ending 7
+                if user_input == "check":
+                    print("If you check, you get curious what was floating in the water.\nThe object looked similar to a log but you decided to jump into the water.\nAs you swim towards the object you feel as if the object is swimming towards you.\nYou decide to swim back however the object in the water continous to swim faster in your direction.\nEventually the object grabs you by your foot,\nturns out you've been fooled as the object happens to be a crocodile,\nas you become its next meal")
+
+                # Scene 19 -> Ending 6
+                elif user_input == "sleep":
+                    print("If you continue to sleep in the tent,\nyou ignore the screams of the person in agony,\nthinking its someone trying to be funny.\nThe screaming eventually stops after a few minutes,\nYou finally get to sleep in peace.\nYou wake up the next morning as Arujan gives you a smile,\nHe says he has to get going but he enjoyed the night.")
+                      
+        # Scene 5 -> Scene 11
+        elif user_input == "no":
+            print("You continue walking as the sun starts to set; you need to find a place to settle for the night before it gets dark outside,\nyou pick up your pace rushing to find a spot to set your tent up for the night.\nUpon searching, you find a cave from the distance.")
+            print("Will you enter the cave or continue searching? (enter/continue)")
+       
+        # Else statement if player fails to anwser with possible choices
+        else:
+            print("Invalid Anwser,\nYou have a bad feeling about going into the cave and you want to stay on trail so you decide to continue on your path")
+            user_input = input("> ").strip().lower()
+
+            # Scene 11 -> Ending 3
+            if user_input == "enter":
+                print("You walk into the cave with caution as Arujan follows you by your side.\nAs you explore deeper into the cave, you find a dark area,\nunable to see anything you flash your light.\nRight in front of your eyes stands a mother bear with its four little bear cubs.\nYou are now the next meal for the family.")
+            
+            # Scene 11 -> Scene 20
+            elif user_input == "continue":
+                print("you find yourself a spot to settle in for the night,\nyou and Arujan set up a tent to sleep in.\nYou guys finally can rest assured.\nIn the middle of the night you hear screams of someone in agony as you look to your side looking for Arujan although hes not there.")
+                print("Will you look for Arujan or will you continue sleeping in the tent? (look/sleep)")
+            
+            # Else statement if player fails to anwser with possible choices
+            else:
+                print("Invalid Anwser,\nYou have a bad feeling about going into the cave and you want to stay on trail so you decide to continue on your path")
+                user_input = input("> ").strip().lower()
+
+                # Scene 20 -> Ending 5
+                if user_input == "look":
+                    print("you can't sleep due to the deadly screams,\nyour curiosity kill you.\nYou open your tent and walk outside,\nyou follow the screams along the dirt pathway.\nThere you see a lady being stabbed several of times as her kid is forced to watch their mother die in front of them.\nWithout a second you run towards the kid trying to save them but you get caught up in the trap as Arujan quickly grabs you by your shirt collar and repeatily stabs you just like the lady.\nNow theres 2 corpse laying in the dirt pathway.")
+                
+                # Scene 20 -> Ending 4
+                elif user_input == "sleep":
+                    print("If you continue to sleep in the tent,\nyou ignore the screams of the person in agony,\nthinking its someone trying to be funny.\nThe screaming eventually stops after a few minutes,\nyou finally get to sleep in peace.\nYou wake up the next morning as Arujan gives you a smile,\nhe says he has to get going but he enjoyed the night.")
+                
+                # Else statement if player fails to anwser with possible choices
+                else:
+                    print("Invalid Anwser,\nYou feel sleepy and proceed to go back to sleep")
+
+# Scene 1 -> Scene 3
+elif user_input == "no":
+    print("Arujan's happy expression slowly fades away as he reveals a slight angry expression.\nYou continue to follow the dirt path, sensing someone looking behind you.\nAs you turn around, you see Arujan standing still at a distance, glaring at you.\nYou speed up your pace and suddenly you're stopped by 2 diverging pathways,\none going left and the other going right.")
+    print("Which way do you go? (left/right)")
+
+# Else statement if player fails to anwser with possible choices
+else:
+    print("Invalid Answer. You trust your gut and decide to go left.\nAs you continue to walk along the dirt pathway, you see a forest.\nYou then remember that you need to get firewood.")
+    user_input = input("> ").strip().lower()
+    
+    # Scene 3 -> Scene 6
+    if user_input == "left":
+        print("You continue to walk along the dirt pathway.\nUpon walking, you see a forest.\nYou remember that you need firewood.")
+        print("Do you go to the forest to get firewood? (yes/no)")
+        user_input = input("> ").strip().lower()
+
+        # Scene 6 -> Scene 12
+        if user_input == "yes":
+            print("You make your way into the forest as you start to collect sticks and branches for the fire.\nAs you keep searching for wood, you go deeper into the forest.\nYou see a shadowy figure behind the trees.\nWhen you look directly at it, the figure doesn't move and holds its position.")
+            print("Will you ignore the shadow figure or go near it? (ignore/investigate)")
+            user_input = input("> ").strip().lower()
+
+            # Scene 12 -> Ending 14
+            if user_input == "ignore":
+                print("You continue to get firewood.\nYou finally get enough, however, you notice the shadow figure keeps getting closer and closer.\nRegardless, you keep ignoring it.\nFinally, the shadow figure disappears. However, you hear footsteps behind you, and right as you turn around,\nArujan gives you a bright smile as he stabs you with a knife in your stomach.")
+
+            # Scene 12 -> Ending 15
+            elif user_input == "investigate":
+                print("You go towards the shadow to see who it might be.\nAs you get closer, the shadow figure quickly dashes at you holding a knife in its hand,\nrevealing its true identity... Arujan, as he stabs you in the chest and slits your throat before running off back into the forest.")
+
+    # Scene 3 -> Scene 7
+    elif user_input == "right":
+        print("You continue to walk along the dirt path.\nYou find a small cabin far away in the distance.")
+        print("Do you enter the cabin? (yes/no)")
+    
+    # Else statement if player fails to anwser with possible choices
+    else:
+        print("You get interested to go inside the cabin, so you decide to follow the path leading towards it")
+        user_input = input("> ").strip().lower()
+
+        # Scene 7 -> Scene 14
+        if user_input == "yes":
+            print("You walk towards the cabin as you see a sign that says, 'only for campers.\nAs a camper yourself, you decide to go inside the cabin and put all your stuff aside.\nYou see stairs leading upstairs.")
+            print("Will you go upstairs? (go/stay)")
+            user_input = input("> ").strip().lower()
+
+            # Scene 14 -> Ending 18
+            if user_input == "go":
+                print("You go upstairs and find yourself a nice bedroom, "
+                      "where you lay down on the bed and enjoy the night inside the shelter.")
+
+            # Scene 14 -> Ending 19
+            elif user_input == "stay":
+                print("If you stay down, then you sit beside the fireplace as you slowly fall asleep in the chair, feeling warm inside the cabin.")
+
+        # Scene 6 -> Scene 13
+        elif user_input == "no":
+            print("You keep walking straight ahead. Upon walking,\na wide-open space catches your attention as it's the perfect place to settle for the night.\nAs you set up your tent, you decide to go fetch some water near a river.\nOnce you arrive at the river, you use your water bottle to collect as much water as possible.\nAs you return, you become very thirsty, but you can't clean the water since you don't have any firewood.")
+            print("What will you do? (drink/don't drink)")
+       
+        # Else statement if player fails to anwser with possible choices
+        else:
+            print("You get very thirsty and start to drink the water regardless whether the water has bacteria")
+            user_input = input("> ").strip().lower()
+
+            # Scene 13 -> Ending 16
+            if user_input == "drink":
+                print("You drink the water.\nYou soon die due to the bacteria and germs in the water.")
+
+            # Scene 13 -> Ending 17
+            elif user_input == "don't drink":
+                print("You die from thirst.")
+
+            # Else statement if player fails to anwser with possible choices
+            else:
+                print("You continue to find a place to set up your tent.\nYou finally find a perfect spot to settle for the night.\nYou unpack all your stuff and set up your tent.\nAfter you finish, you see the same shadow figure staring at you,\nbut now it is much closer than before.")
+                print("Will you ignore it again or confront it? (ignore/confront)")
+                user_input = input("> ").strip().lower()
+
+                # Scene 15 -> Ending 20
+                if user_input == "ignore":
+                    print("If you ignore the shadow, you go back to sleep,\nbut the thought of the shadow keeps you awake.\nSoon after, you see a shadow emerge from outside your tent as you hear footsteps near the entrance.\nYou let out a scream, but it is too late as you see Arujan enter the tent with a knife and a not-so-friendly smile.")
+
+                # Scene 15 -> Ending 21
+                elif user_input == "confront":
+                    print("As you go towards the figure, you realize the shadow figure happens to be Arujan.\nBefore you can question him, he immediately pulls out a knife and slashes at you.\nAs you fall to the ground in pain, Arujan gets on top of you and stabs your chest repeatedly as the blood suffocates you.")
